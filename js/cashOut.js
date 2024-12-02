@@ -19,6 +19,14 @@ document.getElementById('btn-cash-out').addEventListener('click', function (even
             return;
         }
         document.getElementById('account-balance').innerText = newBalance;
+        const div = document.createElement('div');
+        div.classList.add('bg-lime-300');
+        div.classList.add('p-3')
+        div.innerHTML = `
+          <p>Cash Out : ${cashOutAmountNumber} TK. Total current balance ${newBalance} Tk. </p>
+        
+        `
+        document.getElementById('transaction-div').appendChild(div);
     }
     else {
         alert('Failed to Cash Out! Please try again later');

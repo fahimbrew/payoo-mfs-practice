@@ -16,6 +16,12 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
         const newBalance = amountNumber + balanceNumber;
         // console.log(newBalance);
         document.getElementById('account-balance').innerText = newBalance;
+        const p = document.createElement('p');
+        p.innerText = `Cash In : ${amountNumber} Tk. Total current balance : ${newBalance} Tk`;
+        // console.log(p);
+        // p.style.backgroundColor = 'red';
+        // p.style.color = 'white';
+        document.getElementById('text-container').appendChild(p);
 
 
     }

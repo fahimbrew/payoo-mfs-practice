@@ -12,3 +12,14 @@ function getValueByIdFromContainer(id) {
     const valueNumber = Number(value);
     return valueNumber;
 }
+
+// toggle function
+function showSectionById(id) {
+    // Hide all divs
+    document.getElementById('add-money-container').classList.add('hidden');
+    document.getElementById('cash-out-container').classList.add('hidden')
+    document.getElementById('transaction-div').classList.add('hidden');
+    // show container
+    document.getElementById(id).classList.remove('hidden');
+
+}

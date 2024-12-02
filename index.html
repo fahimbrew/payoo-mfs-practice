@@ -29,14 +29,14 @@
                         <div class="divider"></div>
                         <!-- btn div starts -->
                         <div class="grid grid-cols-2 gap-3">
-                            <button class="btn btn-lg bg-green-300">Add Money</button>
-                            <button class="btn btn-lg bg-red-400">Cash Out</button>
-                            <button class="btn btn-lg bg-yellow-400">Transaction</button>
+                            <button id="add-money" class="btn btn-lg bg-green-300">Add Money</button>
+                            <button id="cash-out" class="btn btn-lg bg-red-400">Cash Out</button>
+                            <button id="history-btn" class="btn btn-lg bg-yellow-400">Transaction</button>
                         </div>
                         <!-- btn div ends -->
                         <div class="divider"></div>
                         <!-- add money form starts -->
-                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div id="add-money-container" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
@@ -60,7 +60,8 @@
                         </div>
                         <!-- add money form ends -->
                         <!-- cash out form starts -->
-                        <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div id="cash-out-container"
+                            class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
@@ -84,8 +85,11 @@
                         </div>
                         <!-- cash out form ends -->
                         <!-- transaction section starts -->
-                        <div>
+                        <div id="transaction-div" class="hidden space-y-1">
                             <h1 class="text-center text-3xl font-black">Transaction History</h1>
+                            <div id="text-container" class="p-3 bg-yellow-200">
+                                <!-- <p>${amountNumber} has been added</p> -->
+                            </div>
                         </div>
                         <!-- transaction section ends -->
                     </div>
@@ -97,6 +101,8 @@
     <script src="js/sharedFunction.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/cashOut.js"></script>
+    <script src="js/transaction.js"></script>
+    <script src="js/toogle.js"></script>
 </body>
 
 </html>
