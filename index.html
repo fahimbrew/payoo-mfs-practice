@@ -10,9 +10,93 @@
 </head>
 
 <body>
-    hi
+    <main>
+        <!-- mobile screen starts -->
+        <section class="flex justify-center items-center">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-3">
+                        <!-- stats starts -->
+                        <div class="stats shadow bg-red-200 text-yellow-50">
+                            <div class="stat">
+                                <div class="stat-title">Account Balance</div>
+                                <div id="account-balance" class="stat-value">6000</div>
 
+                            </div>
+                        </div>
+                        <!-- stats ends -->
+                        <div class="divider"></div>
+                        <!-- btn div starts -->
+                        <div class="grid grid-cols-2 gap-3">
+                            <button class="btn btn-lg bg-green-300">Add Money</button>
+                            <button class="btn btn-lg bg-red-400">Cash Out</button>
+                            <button class="btn btn-lg bg-yellow-400">Transaction</button>
+                        </div>
+                        <!-- btn div ends -->
+                        <div class="divider"></div>
+                        <!-- add money form starts -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="input-amount" autocomplete="off" type="text" placeholder="Amount"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">PIN</span>
+                                    </label>
+                                    <input id="input-pin" autocomplete="off" type="password"
+                                        placeholder="Enter 4 Digit PIN" class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-add-money" class="btn  bg-green-600 text-white">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- add money form ends -->
+                        <!-- cash out form starts -->
+                        <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Cash Out Amount</span>
+                                    </label>
+                                    <input id="input-cash-out" autocomplete="off" type="text" placeholder="Amount"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">PIN</span>
+                                    </label>
+                                    <input id="input-cashout-pin" autocomplete="off" type="password"
+                                        placeholder="Enter 4 Digit PIN" class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-cash-out" class="btn  bg-green-600 text-white">Cash Out</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- cash out form ends -->
+                        <!-- transaction section starts -->
+                        <div>
+                            <h1 class="text-center text-3xl font-black">Transaction History</h1>
+                        </div>
+                        <!-- transaction section ends -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- mobile screen ends -->
+    </main>
+    <script src="js/sharedFunction.js"></script>
     <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
 </body>
 
 </html>
